@@ -1085,11 +1085,17 @@ body.theme-dark-hud .scroll-progress-track {
 
 .tool-benefit {
   font-size: 0.85rem;
-  color: #e2e8f0;
-  background: rgba(15, 23, 42, 0.9);
-  border-left: 3px solid var(--accent);
-  padding: 0.55rem 0.8rem;
-  border-radius: 0 6px 6px 0;
+  color: #f1f5f9;
+  background: rgba(37, 99, 235, 0.12);
+  border: 1px solid rgba(96, 165, 250, 0.24);
+  border-left: 3px solid #60a5fa;
+  padding: 0.6rem 0.85rem;
+  border-radius: 0 8px 8px 0;
+}
+
+.tool-benefit strong {
+  color: #60a5fa;
+  font-weight: 700;
 }
 
 .tool-footer {

@@ -1,4 +1,4 @@
-# Nexus Portfolio — Software, Automatización con IA y Capacitación
+# Nexus Portfolio — Aplicaciones, Automatización con IA y Capacitación
 
 Sitio web estático *Zero-Build* (HTML5 semántico + CSS3 moderno + ES6) para presentar el ecosistema de proyectos construidos en **Nexus**: plataformas SaaS en producción, herramientas open-source de automatización de un clic, procesamiento de imagen y texto con IA, bases de datos y cursos de capacitación práctica.
 
@@ -8,7 +8,7 @@ Sitio web estático *Zero-Build* (HTML5 semántico + CSS3 moderno + ES6) para pr
 
 ### Plataformas SaaS y Simuladores en Producción
 - **Fisioterapia Nexus SaaS** — [Sitio comercial](https://www.fisioterapia-nexus.com/) · [Plataforma App](https://mi-fisioterapia-online.web.app)
-- **Finanzas Digitales Nexus (v4)** — [Aplicación en vivo](https://finanzas-digitales-nexus.web.app)
+- **Finanzas Digitales Nexus** — [Aplicación en vivo](https://finanzas-digitales-nexus.web.app)
 - **Simulador Fotovoltaico 3D & Potencial Solar** — [Simulador en vivo](https://potencial-solar-ecuador.web.app) · [Código demo](https://github.com/jcsolanoj/solar-pv-3d-simulator)
 
 ### Suite de Automatización y Herramientas
