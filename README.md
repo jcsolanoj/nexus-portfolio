@@ -16,7 +16,6 @@ Sitio web estático *Zero-Build* (HTML5 semántico + CSS3 moderno + ES6) para pr
 - [`pdf-crypto-signer`](https://github.com/jcsolanoj/pdf-crypto-signer) — Firma electrónica criptográfica PAdES con estampa QR.
 - [`2FA-autofill`](https://github.com/jcsolanoj/2FA-autofill) — Extensión Chrome MV3 y PWA móvil TOTP offline multi-empresa.
 - [`student-pdf-batch-renamer`](https://github.com/jcsolanoj/student-pdf-batch-renamer) — Extractor y renombrador masivo de entregas PDF desde ZIP.
-- **AsistenciaBot** & **Gestor de Suscripciones y Balance Anual** — Casos de estudio privados de automatización y gestión financiera.
 
 ---
 
