@@ -2,97 +2,155 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Nexus — Software, Automatización con IA y Capacitación</title>
-  <meta name="description" content="Portafolio de productos SaaS, automatizaciones de un clic con IA, procesamiento de imágenes y texto, bases de datos y cursos prácticos desarrollados en Nexus.">
-  <link rel="icon" type="image/png" href="./assets/logo-circular.png">
+  <meta name="description" content="Portafolio de plataformas SaaS, simulador solar 3D, automatizaciones de un clic con IA, procesamiento de imágenes y texto, bases de datos y cursos prácticos en Nexus.">
+  <link rel="icon" type="image/svg+xml" href="./assets/nexus-brain.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="#inicio" class="brand">
-        <span class="brand-mark" aria-hidden="true">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/>
-            <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/>
-            <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/>
-          </svg>
-        </span>
-        <span>Nexus</span>
-      </a>
+  <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
 
-      <nav class="nav-links" aria-label="Navegación principal">
-        <a href="#proyectos-saas">Plataformas SaaS</a>
-        <a href="#automatizaciones">Automatizaciones</a>
-        <a href="#capacidades-ia">Qué construimos</a>
-        <a href="#capacitacion">Cursos</a>
-      </nav>
+  <!-- 1. FULL-BLEED CINEMATIC BACKGROUND STAGE -->
+  <div class="cinema-stage" id="cinema-stage" aria-hidden="true">
+    <div class="cinema-canvas-wrap" id="cinema-canvas-wrap">
+      <img
+        src="./assets/hero-editorial-bg.jpg"
+        alt=""
+        width="1408"
+        height="768"
+        fetchpriority="high"
+        class="cinema-bg-image"
+      >
+    </div>
+    <div class="cinema-veil-daylight" id="cinema-veil-daylight"></div>
+    <div class="cinema-veil-twilight" id="cinema-veil-twilight"></div>
+    <div class="cinema-cursor-glow" id="cinema-cursor-glow"></div>
+    <img src="./assets/nexus-brain.svg" alt="" class="cinema-svg-watermark" id="cinema-svg-watermark" loading="lazy">
+  </div>
 
-      <div class="header-actions">
-        <button type="button" class="btn btn-primary" data-open-contact="Consulta General">Hablemos</button>
+  <!-- 2. FIXED EDITORIAL HUD -->
+  <header class="hud-header" id="hud-header">
+    <a href="#inicio" class="brand-mark" aria-label="Nexus Inicio">
+      <div class="brand-svg-badge" aria-hidden="true">
+        <img src="./assets/nexus-brain.svg" alt="">
       </div>
+      <div class="brand-text-wrap">
+        <div class="brand-wordmark">nexus<span>.</span></div>
+        <div class="brand-subtag">software &amp; ia</div>
+      </div>
+    </a>
+
+    <nav class="hud-nav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#proyectos-saas">Plataformas SaaS</a>
+      <a href="#automatizaciones">Herramientas</a>
+      <a href="#capacidades-ia">Qué construimos</a>
+      <a href="#capacitacion">Cursos</a>
+    </nav>
+
+    <div class="hud-actions">
+      <button type="button" id="btn-pure-view" class="btn-pure-view" title="Ver fotografía de fondo sin tarjetas" aria-label="Alternar vista de fotografía pura" aria-pressed="false">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+          <circle cx="12" cy="12" r="3"/>
+        </svg>
+      </button>
+      <button type="button" class="btn-hud-cta" data-open-contact="Consulta General">Hablemos</button>
     </div>
   </header>
 
-  <main id="inicio">
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <p class="section-kicker">Nexus · Software, Automatización e IA Aplicada</p>
-          <h1 class="hero-title">Aplicaciones reales y automatizaciones de un solo clic construidas con apoyo de la IA.</h1>
-          <p class="hero-subtitle">
-            Aquí reúno las plataformas web, bases de datos y herramientas que he desarrollado para resolver problemas concretos: desde clínicas y finanzas personales hasta lectura de imágenes, firma digital y control remoto por Telegram.
-          </p>
-          <div class="hero-cta">
-            <a href="#proyectos-saas" class="btn btn-primary">Ver proyectos en funcionamiento</a>
-            <button type="button" class="btn btn-secondary" data-open-contact="Capacitación Práctica en IA">Consultar por cursos</button>
-          </div>
-          <div class="hero-stats">
-            <div>
-              <div class="stat-value">3 SaaS / 3D</div>
-              <div class="stat-label">Plataformas web activas en producción</div>
-            </div>
-            <div>
-              <div class="stat-value">4 Herramientas</div>
-              <div class="stat-label">Utilidades abiertas de 1 clic, bots y seguridad</div>
-            </div>
-            <div>
-              <div class="stat-value">Código + Cursos</div>
-              <div class="stat-label">Desarrollo a medida y formación práctica</div>
-            </div>
-          </div>
-        </div>
+  <div class="hud-bottom-bar">
+    <div class="hud-bottom-left">
+      <span>automatización 1-clic</span>
+      <span class="hud-dot">•</span>
+      <span>visión &amp; texto ia</span>
+      <span class="hud-dot">•</span>
+      <span>plataformas web</span>
+    </div>
 
-        <div class="hero-visual">
-          <div class="hero-visual-bar">
-            <span>nexus-saas · vista de producción</span>
-            <span>HTML5 / Firebase / Gemini</span>
+    <div class="hud-bottom-center">
+      <button type="button" class="btn-pill-nexus" data-open-contact="Consulta General">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        <span id="hud-pill-cta-text">automatizar un proceso o consultar</span>
+      </button>
+    </div>
+
+    <div class="hud-bottom-right">
+      <span>desliza</span>
+      <div class="scroll-progress-track" aria-hidden="true">
+        <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+      </div>
+      <span class="scroll-pct" id="scroll-pct">0%</span>
+    </div>
+  </div>
+
+  <!-- 3. EDITORIAL SCROLLING CHAPTERS -->
+  <main class="scroll-content" id="contenido-principal" tabindex="-1">
+
+    <!-- Capítulo 1: Hero Diurno -->
+    <section class="hero-section" id="inicio">
+      <div class="container">
+        <div class="hero-editorial-col">
+          <div class="hero-kicker">
+            <img src="./assets/nexus-brain.svg" alt="" width="16" height="16">
+            <span>NEXUS · DESARROLLO DE SOFTWARE Y AUTOMATIZACIÓN CON IA</span>
           </div>
-          <img
-            src="./assets/hero_mockup.png"
-            alt="Vista real de la plataforma Nexus SaaS de gestión clínica con historias, citas y evolución"
-            width="1200"
-            height="750"
-            fetchpriority="high"
-          >
+
+          <h1 class="hero-display-title">
+            Software a medida
+            <span class="accent-line">y procesos en un clic.</span>
+          </h1>
+
+          <p class="hero-lead">
+            Construyo plataformas web, bases de datos y automatizaciones con apoyo de inteligencia artificial para transformar tareas manuales de horas en sistemas reales que funcionan en computadora, tablet y celular.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#proyectos-saas" class="btn-hero-dark">
+              <span>Ver proyectos en funcionamiento</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+            <button type="button" class="btn-hero-light" data-open-contact="Capacitación Práctica en IA">
+              Cursos de capacitación
+            </button>
+          </div>
+
+          <div class="hero-metrics">
+            <div>
+              <div class="hero-metric-val">3 Plataformas</div>
+              <div class="hero-metric-lbl">SaaS y simulador 3D en producción</div>
+            </div>
+            <div>
+              <div class="hero-metric-val">4 Herramientas</div>
+              <div class="hero-metric-lbl">Código abierto de 1 clic en GitHub</div>
+            </div>
+            <div>
+              <div class="hero-metric-val">A Medida</div>
+              <div class="hero-metric-lbl">Apps, bases de datos y formación</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Nivel 1: Plataformas SaaS & Simuladores en Producción -->
-    <section id="proyectos-saas" class="section">
+    <!-- Capítulo 2: Plataformas en Producción -->
+    <section id="proyectos-saas" class="chapter-section">
       <div class="container">
-        <p class="section-kicker">01 · Plataformas en Producción</p>
-        <h2 class="section-title">Sistemas web completos que ya funcionan en línea.</h2>
-        <p class="section-lead">
-          Cada proyecto nació de una necesidad operativa real. Puedes ver los demos en video, probar las aplicaciones en vivo y revisar cómo esa misma arquitectura puede adaptarse a tu empresa o consultorio.
-        </p>
+        <div class="section-header-glass">
+          <p class="section-kicker">01 · Plataformas en Producción</p>
+          <h2 class="section-title">Sistemas web reales que ya operan en línea.</h2>
+          <p class="section-lead">
+            Cada aplicación resuelve un problema operativo concreto. Mira sus videos reales, prueba el simulador 3D interactivo directamente aquí o abre las plataformas en vivo.
+          </p>
+        </div>
 
         <div class="flagship-stack">
           <!-- 1. Fisioterapia Nexus SaaS -->
@@ -106,10 +164,10 @@
               <h3 class="flagship-title">Fisioterapia Nexus SaaS</h3>
               <div class="project-copy-block">
                 <p>
-                  <strong>Qué hace:</strong> Plataforma clínica multiusuario con historias médicas, agenda de citas, registro de asistencias por sesión, control de pagos o abonos, gráficas de evolución física y personalización de marca para cada centro.
+                  <strong>Qué hace:</strong> Sistema clínico para centros de rehabilitación con agenda de citas, historias clínicas A4, registro de asistencias por sesión, control de abonos, gráficas de evolución física y personalización de marca.
                 </p>
                 <p>
-                  <strong>Qué puede hacer por tu negocio:</strong> Si gestionas un consultorio, clínica o servicio por citas, esta misma base de datos reemplaza planillas sueltas y ordena tus expedientes, cobros y agenda en una sola pantalla.
+                  <strong>Qué puede hacer por tu negocio:</strong> Cualquier consultorio o servicio basado en citas puede adaptar esta estructura para reemplazar planillas sueltas y controlar agenda, expedientes y cobros desde un solo lugar.
                 </p>
               </div>
               <div class="flagship-actions">
@@ -174,11 +232,11 @@
                 <img
                   src="./assets/qr-finanzas.png"
                   alt="Código QR para abrir Finanzas Digitales Nexus"
-                  width="54"
-                  height="54"
+                  width="50"
+                  height="50"
                   loading="lazy"
                 >
-                <p>PWA instalable con recepción directa de comprobantes desde el menú compartir del teléfono y exportación contable en Excel y PDF.</p>
+                <p>PWA instalable con lectura de comprobantes desde el menú compartir del teléfono y exportación a Excel y PDF.</p>
               </div>
             </div>
 
@@ -191,10 +249,10 @@
               <h3 class="flagship-title">Finanzas Digitales Nexus (v4)</h3>
               <div class="project-copy-block">
                 <p>
-                  <strong>Qué hace:</strong> Lee automáticamente fotos de recibos, transferencias bancarias y PDFs usando visión artificial de Google Gemini. Extrae montos, fechas y categorías, aprende de tus correcciones y actualiza balances en tiempo real.
+                  <strong>Qué hace:</strong> Extrae automáticamente montos, fechas, conceptos y cuentas desde fotos de comprobantes bancarios y PDFs usando visión artificial de Google Gemini, aprendiendo de las correcciones del usuario.
                 </p>
                 <p>
-                  <strong>Qué puede hacer por tu negocio:</strong> Cualquier empresa que reciba comprobantes, facturas o formularios por imagen puede automatizar la digitación contable y guardar todo estructurado en base de datos en segundos.
+                  <strong>Qué puede hacer por tu negocio:</strong> Si tu equipo digita facturas, recibos o formularios a mano, esta misma tecnología lee la imagen, estructura la información y la guarda directo en tu base de datos en segundos.
                 </p>
               </div>
               <div class="flagship-actions">
@@ -208,26 +266,26 @@
             </div>
           </article>
 
-          <!-- 3. Simulador Fotovoltaico 3D & Potencial Solar -->
+          <!-- 3. Simulador Fotovoltaico 3D Interactivo Real -->
           <article class="flagship-card flagship-card--split">
             <div>
               <div class="card-meta-row">
                 <span class="tag tag--live">En Vivo</span>
                 <span class="tag tag--open">Código Demo en GitHub</span>
-                <span class="tag">Three.js 3D · FastAPI · SQLite</span>
+                <span class="tag">Three.js WebGL · FastAPI</span>
               </div>
               <h3 class="flagship-title">Simulador Fotovoltaico 3D &amp; Potencial Solar</h3>
               <div class="project-copy-block">
                 <p>
-                  <strong>Qué hace:</strong> Plataforma geoespacial y simulador 3D en tiempo real que calcula irradiación mensual por ubicación y permite ajustar inclinación, azimut, trayectoria solar y sombras sobre paneles en pantalla.
+                  <strong>Qué hace:</strong> Simulador 3D interactivo en el navegador conectado a una API en Python. Mueve los controles de la derecha (o arrastra la escena con el ratón) para inclinar el panel, girarlo y observar cómo incide el sol a lo largo del día.
                 </p>
                 <p>
-                  <strong>Qué puede hacer por tu proyecto:</strong> Demuestra cómo integrar visualización 3D interactiva en el navegador con APIs en Python rápidas y seguras (RBAC, hashing <code>scrypt</code>), sin dejar datos sensibles expuestos en repositorios públicos.
+                  <strong>Qué puede hacer por tu proyecto:</strong> Muestra cómo construir visualizaciones 3D en tiempo real sobre la web combinadas con backends seguros y bases de datos protegidas.
                 </p>
               </div>
               <div class="flagship-actions">
                 <a href="https://potencial-solar-ecuador.web.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                  Abrir Simulador en Vivo
+                  Abrir Simulador Completo
                 </a>
                 <a href="https://github.com/jcsolanoj/solar-pv-3d-simulator" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
                   Ver código en GitHub
@@ -235,38 +293,28 @@
               </div>
             </div>
 
-            <div class="solar-preview-box" aria-label="Esquema visual del simulador solar 3D">
-              <div class="solar-preview-header">
-                <span>SIMULADOR 3D · BÓVEDA SOLAR</span>
-                <span>THREE.JS / FASTAPI</span>
+            <div class="solar-3d-shell" aria-label="Simulador Solar 3D interactivo">
+              <div class="solar-3d-topbar">
+                <span>SIMULADOR SOLAR 3D EN VIVO</span>
+                <button type="button" id="btn-auto-sun" class="btn-auto-sun is-playing">Pausar sol</button>
               </div>
-              <svg viewBox="0 0 420 210" width="100%" role="img" aria-label="Diagrama esquemático de trayectoria solar y arreglo fotovoltaico 3D">
-                <rect x="0" y="0" width="420" height="210" rx="10" fill="#050b18"/>
-                <path d="M 45 160 Q 210 22 375 160" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="5 5"/>
-                <circle cx="295" cy="76" r="13" fill="#f59e0b"/>
-                <circle cx="295" cy="76" r="22" fill="#f59e0b" fill-opacity="0.18"/>
-                <line x1="295" y1="76" x2="205" y2="142" stroke="#f59e0b" stroke-opacity="0.45" stroke-width="1.5"/>
-                <ellipse cx="210" cy="166" rx="145" ry="22" fill="none" stroke="#1e293b" stroke-width="1.5"/>
-                <polygon points="155,152 255,152 238,118 172,118" fill="#1d4ed8" stroke="#60a5fa" stroke-width="1.5"/>
-                <line x1="196" y1="118" x2="188" y2="152" stroke="#93c5fd" stroke-width="1"/>
-                <line x1="220" y1="118" x2="222" y2="152" stroke="#93c5fd" stroke-width="1"/>
-                <line x1="165" y1="135" x2="246" y2="135" stroke="#93c5fd" stroke-width="1"/>
-                <line x1="190" y1="152" x2="190" y2="168" stroke="#64748b" stroke-width="3"/>
-                <line x1="224" y1="152" x2="224" y2="168" stroke="#64748b" stroke-width="3"/>
-              </svg>
-              <div class="solar-metrics-bar">
-                <div class="solar-metric">
-                  <span>Inclinación (Tilt)</span>
-                  <strong>15° Óptimo</strong>
+              <div id="solar-3d-canvas" class="solar-3d-canvas"></div>
+              <div class="solar-3d-controls">
+                <div class="solar-control-item">
+                  <label for="solar-time-slider">Recorrido del Sol</label>
+                  <input type="range" id="solar-time-slider" min="6.4" max="17.6" step="0.1" value="10.5">
                 </div>
-                <div class="solar-metric">
-                  <span>Motor Gráfico</span>
-                  <strong>WebGL 60 FPS</strong>
+                <div class="solar-control-item">
+                  <label for="solar-tilt-slider">Inclinación del Panel</label>
+                  <input type="range" id="solar-tilt-slider" min="0" max="60" step="1" value="18">
                 </div>
-                <div class="solar-metric">
-                  <span>Acceso Público</span>
-                  <strong>Hosting Web</strong>
+                <div class="solar-control-item">
+                  <label for="solar-azimuth-slider">Orientación (Giro)</label>
+                  <input type="range" id="solar-azimuth-slider" min="-180" max="180" step="2" value="0">
                 </div>
+              </div>
+              <div class="solar-3d-hint">
+                <span>Arrastra la escena 3D para rotar la cámara o usa la rueda para acercar.</span>
               </div>
             </div>
           </article>
@@ -274,14 +322,16 @@
       </div>
     </section>
 
-    <!-- Nivel 2: Suite de Automatización, Agentes IA y Herramientas -->
-    <section id="automatizaciones" class="section">
+    <!-- Capítulo 3: Herramientas Open-Source -->
+    <section id="automatizaciones" class="chapter-section">
       <div class="container">
-        <p class="section-kicker">02 · Automatizaciones de 1 Clic &amp; Herramientas</p>
-        <h2 class="section-title">Procesos repetitivos convertidos en scripts, bots y utilidades rápidas.</h2>
-        <p class="section-lead">
-          Herramientas de código abierto en GitHub listas para instalar y adaptar, pensadas para automatizar tareas diarias sin intervención manual.
-        </p>
+        <div class="section-header-glass">
+          <p class="section-kicker">02 · Automatizaciones de 1 Clic &amp; Código Abierto</p>
+          <h2 class="section-title">Procesos repetitivos convertidos en scripts, bots y utilidades rápidas.</h2>
+          <p class="section-lead">
+            Cuatro herramientas abiertas en GitHub listas para instalar y adaptar, pensadas para eliminar trabajo manual diario en un solo clic.
+          </p>
+        </div>
 
         <div class="filter-bar" role="group" aria-label="Filtrar herramientas por categoría">
           <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">Todos (4)</button>
@@ -291,7 +341,6 @@
         </div>
 
         <div class="tools-grid">
-          <!-- 1. bot-control-telegram-pc -->
           <article class="tool-card" data-category="ai-agents 1click">
             <div>
               <div class="card-meta-row">
@@ -304,14 +353,14 @@
                   <span class="mini-ui-highlight">● En línea</span>
                 </div>
                 <div class="mini-ui-line">🎙️ "Búscame el contrato PDF y envíamelo"</div>
-                <div class="mini-ui-line mini-ui-accent">→ Gemini AFC: buscar_archivos() + adjuntar_telegram()</div>
+                <div class="mini-ui-line mini-ui-accent">→ Gemini AFC: buscar_archivos() + adjuntar()</div>
                 <div class="mini-ui-line mini-ui-highlight">✓ Documento enviado al móvil en 3.2s</div>
               </div>
             </div>
             <div>
               <h3>Control Remoto de PC desde Telegram</h3>
-              <p>Puente autónomo que conecta tu teléfono por Telegram con Google Gemini y tu computadora Windows para buscar documentos, leer webs con captura y ejecutar tareas de desarrollo por voz o texto.</p>
-              <div class="tool-benefit">Para quién sirve: profesionales que necesitan archivos, reportes o acciones en su PC cuando están fuera de la oficina.</div>
+              <p>Puente autónomo que conecta tu teléfono por Telegram con Google Gemini y tu computadora Windows para buscar archivos, consultar sitios web con capturas y ejecutar tareas por voz o texto.</p>
+              <div class="tool-benefit">Para quién sirve: quien necesita archivos, reportes o acciones en su computadora mientras está fuera de la oficina.</div>
             </div>
             <div class="tool-footer">
               <a href="https://github.com/jcsolanoj/bot-control-telegram-pc" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Ver código en GitHub ↗</a>
@@ -319,7 +368,6 @@
             </div>
           </article>
 
-          <!-- 2. pdf-crypto-signer -->
           <article class="tool-card" data-category="security 1click">
             <div>
               <div class="card-meta-row">
@@ -332,14 +380,14 @@
                   <span class="mini-ui-highlight">SHA-256</span>
                 </div>
                 <div class="mini-ui-line">$ firmar-pdf -i ./actas/ -o ./firmadas/</div>
-                <div class="mini-ui-line mini-ui-accent">→ Detectando posición de firma + QR dinámico</div>
-                <div class="mini-ui-line mini-ui-highlight">✓ 18 PDFs firmados en memoria (PBKDF2 PIN)</div>
+                <div class="mini-ui-line mini-ui-accent">→ Posición automática + QR verificable</div>
+                <div class="mini-ui-line mini-ui-highlight">✓ Lote firmado en memoria (PBKDF2 PIN)</div>
               </div>
             </div>
             <div>
               <h3>Firma Electrónica Masiva de PDFs</h3>
-              <p>Aplicación de escritorio, CLI y menú contextual de clic derecho en Windows para estampar firmas criptográficas reales (.p12/.pfx) con código QR verificable y búsqueda automática de texto en lotes de PDFs.</p>
-              <div class="tool-benefit">Para quién sirve: docentes, estudios jurídicos o empresas que firman decenas de informes o contratos cada semana.</div>
+              <p>Aplicación de escritorio, CLI y menú contextual en Windows para estampar firmas criptográficas reales (.p12/.pfx) con código QR y ubicación automática del firmante en lotes completos.</p>
+              <div class="tool-benefit">Para quién sirve: docentes, estudios jurídicos o empresas que firman decenas de actas o informes cada semana.</div>
             </div>
             <div class="tool-footer">
               <a href="https://github.com/jcsolanoj/pdf-crypto-signer" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Ver código en GitHub ↗</a>
@@ -347,7 +395,6 @@
             </div>
           </article>
 
-          <!-- 3. 2FA-autofill -->
           <article class="tool-card" data-category="security 1click">
             <div>
               <div class="card-meta-row">
@@ -360,14 +407,14 @@
                   <span class="mini-ui-accent">24s</span>
                 </div>
                 <div class="mini-ui-line">Origen: https://portal.tu-empresa.com</div>
-                <div class="mini-ui-line mini-ui-highlight">Código TOTP: 482 915 · Copiado y rellenado</div>
-                <div class="mini-ui-line">Sin permisos &lt;all_urls&gt; · 100% Offline</div>
+                <div class="mini-ui-line mini-ui-highlight">Código TOTP: 482 915 · Rellenado automático</div>
+                <div class="mini-ui-line">Sin permisos globales · 100% Offline</div>
               </div>
             </div>
             <div>
               <h3>Autocompletado 2FA Multi-Empresa &amp; PWA</h3>
-              <p>Extensión de navegador (Manifest V3) y aplicación móvil offline que generan códigos TOTP estándar (SHA-1/256/512) y los completan únicamente en los dominios autorizados por el usuario.</p>
-              <div class="tool-benefit">Para quién sirve: equipos que inician sesión múltiples veces al día en portales con doble factor y quieren agilidad sin perder aislamiento.</div>
+              <p>Extensión de Chrome (Manifest V3) y PWA móvil sin conexión que generan códigos TOTP estándar y los completan únicamente en los dominios autorizados por el usuario.</p>
+              <div class="tool-benefit">Para quién sirve: equipos que inician sesión varias veces al día en portales con doble factor y buscan rapidez con aislamiento por origen.</div>
             </div>
             <div class="tool-footer">
               <a href="https://github.com/jcsolanoj/2FA-autofill" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Ver código en GitHub ↗</a>
@@ -375,7 +422,6 @@
             </div>
           </article>
 
-          <!-- 4. student-pdf-batch-renamer -->
           <article class="tool-card" data-category="1click">
             <div>
               <div class="card-meta-row">
@@ -394,8 +440,8 @@
             </div>
             <div>
               <h3>Renombrador Masivo de Entregas PDF</h3>
-              <p>App web local sin servidor y script de Windows que extraen carpetas anidadas de archivos .zip (Moodle, Canvas o Teams) y renombran todos los PDFs con el nombre limpio de cada persona.</p>
-              <div class="tool-benefit">Para quién sirve: docentes, recursos humanos o áreas administrativas que descargan lotes masivos de archivos comprimidos.</div>
+              <p>App web local sin servidor y script de Windows que extraen carpetas anidadas de archivos .zip (Moodle, Canvas o Teams) y renombran los PDFs con el nombre limpio de cada persona.</p>
+              <div class="tool-benefit">Para quién sirve: docentes, talento humano o áreas administrativas que procesan entregas masivas en archivos comprimidos.</div>
             </div>
             <div class="tool-footer">
               <a href="https://github.com/jcsolanoj/student-pdf-batch-renamer" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Ver código en GitHub ↗</a>
@@ -406,66 +452,70 @@
       </div>
     </section>
 
-    <!-- Nivel 3A: Qué se puede automatizar y construir con IA -->
-    <section id="capacidades-ia" class="section">
+    <!-- Capítulo 4: Capacidades IA -->
+    <section id="capacidades-ia" class="chapter-section">
       <div class="container">
-        <p class="section-kicker">03 · Capacidades Aplicadas</p>
-        <h2 class="section-title">¿Qué se puede hacer hoy usando Inteligencia Artificial?</h2>
-        <p class="section-lead">
-          La IA sirve de poco si se queda en una ventana de chat. Su valor real aparece cuando la conectamos con tus archivos, tu página web o tu base de datos para resolver trabajo operativo de todos los días.
-        </p>
+        <div class="section-header-glass">
+          <p class="section-kicker">03 · Capacidades Aplicadas</p>
+          <h2 class="section-title">¿Qué se puede construir hoy usando Inteligencia Artificial?</h2>
+          <p class="section-lead">
+            La IA sirve de poco si se queda en un chat. Su valor real aparece cuando la conectamos con tus archivos, tu página web o tu base de datos para resolver trabajo operativo de todos los días.
+          </p>
+        </div>
 
         <div class="capabilities-grid">
           <div class="capability-item">
             <div class="capability-num">01 / PROCESOS RECURRENTES</div>
             <h3>Automatizaciones de un solo clic</h3>
-            <p>Si todas las semanas repites los mismos pasos —descargar archivos, limpiar filas, cruzar datos o generar reportes—, ese flujo se programa una vez para ejecutarse con un botón o en horario fijo.</p>
+            <p>Si todas las semanas repites los mismos pasos (descargar archivos, limpiar filas, cruzar datos o armar informes), ese flujo se programa una vez para ejecutarse con un botón.</p>
             <div class="capability-io">Entrada: ZIP / Excel / Carpeta → Salida: Reporte limpio en segundos</div>
           </div>
 
           <div class="capability-item">
             <div class="capability-num">02 / VISIÓN Y LENGUAJE</div>
             <h3>Procesamiento de imágenes y texto con IA</h3>
-            <p>Sistemas que leen fotografías de comprobantes, facturas, PDFs o formularios, interpretan los datos clave y los validan antes de guardarlos o enviarlos.</p>
-            <div class="capability-io">Entrada: Foto / PDF / Audio → Salida: JSON estructurado y registro contable</div>
+            <p>Sistemas que leen fotos de comprobantes, facturas, PDFs o formularios, extraen los datos clave y los validan antes de guardarlos o enviarlos.</p>
+            <div class="capability-io">Entrada: Foto / PDF / Audio → Salida: Registro estructurado</div>
           </div>
 
           <div class="capability-item">
             <div class="capability-num">03 / PRODUCTO DIGITAL</div>
             <h3>Creación de páginas web y aplicaciones</h3>
-            <p>Desde páginas informativas rápidas y claras hasta aplicaciones web completas con inicio de sesión, paneles administrativos, gráficas y funcionamiento offline como PWA.</p>
+            <p>Desde sitios informativos rápidos hasta aplicaciones web completas con inicio de sesión, paneles administrativos, gráficas y funcionamiento offline como PWA.</p>
             <div class="capability-io">Entrada: Reglas de negocio → Salida: Web o SaaS publicado en línea</div>
           </div>
 
           <div class="capability-item">
             <div class="capability-num">04 / DATOS ORGANIZADOS</div>
             <h3>Bases de datos y control operativo</h3>
-            <p>Diseño de bases de datos limpias (Firestore, SQLite, PostgreSQL) para que la información de clientes, citas, pagos o inventario deje de duplicarse en archivos sueltos.</p>
+            <p>Diseño de bases de datos limpias (Firestore, SQLite, PostgreSQL) para que la información de clientes, citas, pagos o inventario deje de perderse en archivos sueltos.</p>
             <div class="capability-io">Entrada: Hojas dispersas → Salida: Base de datos segura y consultable</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Nivel 3B: Cursos de Capacitación + Filosofía Honesta -->
-    <section id="capacitacion" class="section">
+    <!-- Capítulo 5: Cursos y Nota de Aprendizaje Continuo -->
+    <section id="capacitacion" class="chapter-section">
       <div class="container">
-        <p class="section-kicker">04 · Formación Práctica</p>
-        <h2 class="section-title">Cursos de capacitación y aprendizaje continuo.</h2>
+        <div class="section-header-glass">
+          <p class="section-kicker">04 · Formación Práctica</p>
+          <h2 class="section-title">Cursos de capacitación y aprendizaje continuo.</h2>
+        </div>
 
         <div class="training-grid">
           <div class="training-card">
             <span class="tag tag--open">Talleres y Mentorías</span>
-            <h3 style="font-family: var(--font-display); font-size: 1.45rem; margin: 0.9rem 0 0.65rem;">
+            <h3 style="font-size: 1.4rem; margin: 0.9rem 0 0.65rem;">
               Aprende a usar herramientas de IA para construir tus propias soluciones
             </h3>
-            <p style="color: var(--text-secondary); font-size: 0.96rem;">
-              Imparto cursos de capacitación dirigidos a profesionales, docentes, emprendedores y equipos que quieren aprender a crear automatizaciones, páginas web, manejo de bases de datos y flujos de trabajo con IA sin depender siempre de terceros.
+            <p style="color: #cbd5e1; font-size: 0.95rem;">
+              Doy cursos de capacitación para profesionales, docentes, emprendedores y equipos que desean aprender a crear automatizaciones, páginas web, manejo de bases de datos y flujos prácticos con IA sin depender siempre de terceros.
             </p>
             <ul class="training-list">
-              <li>Sesiones 100% prácticas trabajando sobre tus documentos, hojas de cálculo y necesidades reales.</li>
-              <li>Uso efectivo de asistentes de programación y modelos multimodales para procesar texto e imágenes.</li>
-              <li>Buenas prácticas de seguridad para publicar herramientas web sin exponer datos sensibles ni credenciales.</li>
+              <li>Clases enfocadas en tus documentos, hojas de cálculo y necesidades reales de trabajo.</li>
+              <li>Uso de asistentes de programación y modelos multimodales para procesar texto e imágenes.</li>
+              <li>Criterios prácticos de seguridad para publicar herramientas web sin exponer credenciales ni datos sensibles.</li>
             </ul>
             <button type="button" class="btn btn-primary" data-open-contact="Capacitación Práctica en IA">
               Consultar fechas y temario
@@ -475,56 +525,52 @@
           <aside class="honesty-note">
             <div>
               <p class="section-kicker" style="margin-bottom: 0.4rem;">Criterio de Trabajo</p>
-              <h3>No lo sé todo, pero sigo aprendiendo todos los días.</h3>
-              <p style="margin-bottom: 0.9rem;">
-                La inteligencia artificial cambia cada semana: aparecen nuevos modelos, cambian las interfaces y surgen formas más rápidas de resolver problemas técnicos.
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.65rem;">No lo sé todo, pero sigo aprendiendo todos los días.</h3>
+              <p style="margin-bottom: 0.9rem; color: #cbd5e1; font-size: 0.94rem;">
+                La inteligencia artificial cambia cada semana: salen modelos nuevos, evolucionan las herramientas y aparecen formas más directas de resolver problemas técnicos.
               </p>
-              <p>
-                Por eso nunca prometo saberlo todo. Mi compromiso en Nexus es seguir capacitándome, probando herramientas reales en proyectos propios y compartiendo contigo únicamente lo que ya demostró funcionar en la práctica.
+              <p style="color: #cbd5e1; font-size: 0.94rem;">
+                Por eso nunca prometo saberlo todo. Mi compromiso en Nexus es seguir capacitándome, probando cada tecnología en proyectos reales y compartiendo contigo lo que sí funciona en la práctica.
               </p>
             </div>
 
             <div class="honesty-signature">
-              <img
-                src="./assets/logo-circular.png"
-                alt="Emblema circular de Nexus"
-                width="44"
-                height="44"
-                loading="lazy"
-              >
+              <div class="signature-emblem" aria-hidden="true">
+                <img src="./assets/nexus-brain.svg" alt="" width="24" height="24" loading="lazy">
+              </div>
               <div>
-                <div style="font-weight: 700; font-size: 0.95rem;">Nexus · Juan Carlos Solano</div>
-                <div style="font-size: 0.82rem; color: var(--text-muted);">Desarrollo, Automatización &amp; Capacitación</div>
+                <div style="font-weight: 700; font-size: 0.95rem; color: #ffffff;">Nexus · Juan Carlos Solano</div>
+                <div style="font-size: 0.82rem; color: #94a3b8;">Desarrollo, Automatización &amp; Capacitación</div>
               </div>
             </div>
           </aside>
         </div>
       </div>
     </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <a href="#inicio" class="footer-brand" aria-label="Volver arriba — Nexus">
+            <img src="./assets/nexus-brain.svg" alt="" width="30" height="30" loading="lazy">
+            <span class="footer-brand-name">nexus<span>.</span></span>
+          </a>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center;">
+            <a href="https://github.com/jcsolanoj" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">GitHub Público (jcsolanoj)</a>
+            <button type="button" class="btn btn-primary" data-open-contact="Consulta General">
+              Contáctanos
+            </button>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Nexus · Latinoamérica. Portafolio de plataformas SaaS, automatizaciones con IA y capacitación.</p>
+          <p>Formulario con protección anti-spam y envío privado directo.</p>
+        </div>
+      </div>
+    </footer>
   </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="brand">
-          <img src="./assets/nexus-brain.png" alt="Logo Nexus" width="32" height="32" loading="lazy">
-          <span>Nexus</span>
-        </div>
-
-        <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center;">
-          <a href="https://github.com/jcsolanoj" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">GitHub Público (jcsolanoj)</a>
-          <button type="button" class="btn btn-primary" data-open-contact="Consulta General">
-            Contáctanos
-          </button>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>© 2026 Nexus. Latinoamérica · Portafolio de software, automatización con IA y capacitación.</p>
-        <p>Formulario privado con envío directo y protección anti-spam.</p>
-      </div>
-    </div>
-  </footer>
 
   <!-- Modal Nativo de Contacto (Modern Web Guidance: light-dismiss + scroll containment) -->
   <dialog id="contactModal" closedby="any" aria-labelledby="contactModalTitle">
@@ -573,6 +619,8 @@
     </div>
   </dialog>
 
+  <script defer src="./vendor/three.min.js"></script>
+  <script defer src="./vendor/OrbitControls.js"></script>
   <script type="module" src="./js/app.js"></script>
 </body>
 </html>
